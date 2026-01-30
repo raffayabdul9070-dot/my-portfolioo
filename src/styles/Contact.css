@@ -1,0 +1,341 @@
+.contact {
+  min-height: 100vh;
+  padding-top: 100px;
+  position: relative;
+}
+
+.contact-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem 4rem;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+/* Contact Info */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact-info h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+}
+
+.info-card {
+  background: rgba(26, 26, 46, 0.6);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 243, 255, 0.2);
+  border-radius: 15px;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.info-card:hover {
+  border-color: var(--primary-color);
+  box-shadow: 0 5px 30px rgba(0, 243, 255, 0.3);
+  background: rgba(26, 26, 46, 0.8);
+}
+
+.info-icon {
+  font-size: 2.5rem;
+  min-width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 243, 255, 0.1);
+  border: 2px solid var(--primary-color);
+  border-radius: 50%;
+  filter: drop-shadow(0 0 10px var(--primary-color));
+}
+
+.info-content h3 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.2rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+}
+
+.info-content p,
+.info-content a {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.info-content a:hover {
+  color: var(--primary-color);
+}
+
+/* Social Links */
+.social-links {
+  margin-top: 2rem;
+}
+
+.social-links h3 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.social-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  background: rgba(26, 26, 46, 0.6);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(0, 243, 255, 0.2);
+  border-radius: 15px;
+  text-decoration: none;
+  color: var(--text-primary);
+  transition: all 0.3s ease;
+  min-width: 100px;
+}
+
+.social-icon:hover {
+  border-color: var(--primary-color);
+  box-shadow: 0 5px 25px rgba(0, 243, 255, 0.4);
+  background: rgba(26, 26, 46, 0.9);
+}
+
+.social-icon span:first-child {
+  font-size: 2rem;
+}
+
+.social-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* Contact Form */
+.contact-form-wrapper {
+  background: rgba(26, 26, 46, 0.6);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 243, 255, 0.2);
+  border-radius: 20px;
+  padding: 3rem;
+}
+
+.contact-form-wrapper h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(0, 243, 255, 0.3);
+  border-radius: 10px;
+  color: var(--text-primary);
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 20px rgba(0, 243, 255, 0.2);
+}
+
+.form-group textarea {
+  resize: vertical;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: var(--text-secondary);
+  opacity: 0.7;
+}
+
+/* Success Message */
+.success-message {
+  text-align: center;
+  padding: 3rem;
+}
+
+.success-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1.5rem;
+  background: rgba(0, 255, 136, 0.2);
+  border: 3px solid #00ff88;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: #00ff88;
+  animation: success-bounce 0.6s ease;
+}
+
+@keyframes success-bounce {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+.success-message h3 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.success-message p {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+}
+
+/* Availability Section */
+.availability-section {
+  margin-top: 4rem;
+}
+
+.availability-card {
+  background: rgba(26, 26, 46, 0.6);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 243, 255, 0.2);
+  border-radius: 20px;
+  padding: 3rem;
+  text-align: center;
+}
+
+.availability-card h3 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+  letter-spacing: 2px;
+}
+
+.availability-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.availability-item {
+  background: rgba(0, 243, 255, 0.1);
+  border: 1px solid var(--primary-color);
+  border-radius: 50px;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.availability-item:hover {
+  background: rgba(0, 243, 255, 0.2);
+  box-shadow: 0 0 20px rgba(0, 243, 255, 0.3);
+  transform: translateY(-3px);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .contact-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact {
+    padding-top: 80px;
+  }
+
+  .contact-container {
+    padding: 0 1rem 4rem;
+  }
+
+  .contact-form-wrapper {
+    padding: 2rem;
+  }
+
+  .contact-form-wrapper h2 {
+    font-size: 1.5rem;
+  }
+
+  .availability-card {
+    padding: 2rem;
+  }
+
+  .availability-card h3 {
+    font-size: 1.5rem;
+  }
+
+  .availability-items {
+    flex-direction: column;
+  }
+
+  .availability-item {
+    width: 100%;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .info-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .info-icon {
+    margin: 0 auto;
+  }
+}
